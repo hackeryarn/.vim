@@ -1,6 +1,6 @@
 source ~/.vim/packages.vim
 
-:imap fd <Esc>
+imap fd <Esc>
 let mapleader = " "
 let g:mapleader = " "
 
