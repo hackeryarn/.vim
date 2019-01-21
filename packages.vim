@@ -39,3 +39,5 @@ call minpac#add('plasticboy/vim-markdown')
 call minpac#add('fatih/vim-go')
 
 packloadall
+
+source  ~/.vim/packages-config.vim
