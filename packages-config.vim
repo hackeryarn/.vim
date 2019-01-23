@@ -61,6 +61,11 @@ let g:ale_linter_aliases = {
 \   'jsx': 'javascript'
 \}
 
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> ]W <Plug>(ale_last)
+
 "FZF
 nmap <C-p> :Files<CR>
 nmap gb :Buffers<CR>

@@ -17,6 +17,7 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-abolish')
 call minpac#add('tpope/vim-unimpaired')
 call minpac#add('tpope/vim-commentary')
+call minpac#add('tpope/vim-dispatch')
 
 call minpac#add('vim-airline/vim-airline')
 call minpac#add('vim-airline/vim-airline-themes')
