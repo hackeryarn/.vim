@@ -43,6 +43,7 @@ call minpac#add('w0rp/ale')
 
 " Languages
 call minpac#add('sheerun/vim-polyglot')
+call minpac#add('mattn/emmet-vim')
 call minpac#add('plasticboy/vim-markdown')
 call minpac#add('fatih/vim-go')
 
