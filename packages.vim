@@ -16,6 +16,7 @@ call minpac#add('godlygeek/tabular')
 call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-abolish')
 call minpac#add('tpope/vim-unimpaired')
+call minpac#add('tpope/vim-obsession')
 
 " Themes
 call minpac#add('vim-airline/vim-airline')
@@ -38,6 +39,7 @@ call minpac#add('tpope/vim-fugitive')
 " Development
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-dispatch')
+call minpac#add('radenling/vim-dispatch-neovim')
 call minpac#add('janko-m/vim-test')
 call minpac#add('w0rp/ale')
 
