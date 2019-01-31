@@ -66,7 +66,15 @@ nmap <silent> [w <Plug>(ale_previous)
 nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
 
-"FZF
+" Compilers
+let g:dispatch_compilers={}
+let g:dispatch_compilers['stack build']='stack-build'
+let g:dispatch_compilers['stack install']='stack-install'
+
+" Tests
+let test#strategy = 'dispatch'
+
+" FZF
 nmap <C-p> :Files<CR>
 nmap gb :Buffers<CR>
 
