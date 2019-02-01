@@ -40,6 +40,7 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-dispatch')
 call minpac#add('radenling/vim-dispatch-neovim')
+call minpac#add('sgur/vim-editorconfig')
 call minpac#add('janko-m/vim-test')
 call minpac#add('w0rp/ale')
 
