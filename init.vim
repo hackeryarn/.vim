@@ -85,13 +85,6 @@ nnoremap <M-j> <C-w>j
 nnoremap <M-k> <C-w>k
 nnoremap <M-l> <C-w>l
 
-if has('nvim')
-  tnoremap <M-h> <c-\><c-n><c-w>h
-  tnoremap <M-j> <c-\><c-n><c-w>j
-  tnoremap <M-k> <c-\><c-n><c-w>k
-  tnoremap <M-l> <c-\><c-n><c-w>l
-endif
-
 " Open file relative to the current file
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 map <leader>ew :e %%
@@ -157,6 +150,15 @@ set display+=lastline
 " ctags
 nnoremap <f5> :!ctags -R --exclude=.git --exclude=node_modules --exclude=gulp<CR>
 
+" Terminal
+if has('nvim')
+  tnoremap fd <C-\><C-n>
+  tnoremap <M-h> <c-\><c-n><c-w>h
+  tnoremap <M-j> <c-\><c-n><c-w>j
+  tnoremap <M-k> <c-\><c-n><c-w>k
+  tnoremap <M-l> <c-\><c-n><c-w>l
+endif
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
     runtime macros/matchit.vim
@@ -183,8 +185,3 @@ if has("autocmd")
 
 else
 endif " has("autocmd")
-
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
-endif
