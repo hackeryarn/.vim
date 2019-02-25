@@ -26,6 +26,9 @@ let g:racer_cmd = "racer"
 let g:racer_experimental_completer = 1
 let g:ale_rust_cargo_use_check = 1
 
+" Scala
+let g:scala_use_builtin_tagbar_defs = 1
+
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -41,11 +44,13 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
+let g:ale_set_balloons = 1
 
 let g:ale_linters = {
+\   'haskell': ['hie'],
 \   'javascript': ['eslint'],
 \   'python': ['pycodestyle'],
-\   'rust': ['cargo'],
+\   'scala': ['sbtserver'],
 \}
 
 let g:ale_fixers = {
@@ -53,7 +58,6 @@ let g:ale_fixers = {
 \   'haskell': ['hfmt'],
 \   'javascript': ['eslint'],
 \   'python': ['autopep8'],
-\   'rust': ['cargo'],
 \}
 
 let g:ale_linter_aliases = {
